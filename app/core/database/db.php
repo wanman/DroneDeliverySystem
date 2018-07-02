@@ -8,6 +8,11 @@
 		private static $local_user = "root";
 		private static $local_pass = "";
 		private static $local_name = "delivery_system";
+
+		private static $live_host = "sql303.epizy.com";
+		private static $live_user = "epiz_22326083";
+		private static $live_pass = "EnnDZGQZU5JSd";
+		private static $live_name = "epiz_22326083_db_delivery_system";
 		
 		public static function get_db () {
 			try {
@@ -20,6 +25,9 @@
 
 					if ($url_host['host'] == 'localhost') {
 						$conn = new PDO("mysql:host=".self::$local_host.";dbname=".self::$local_name."",self::$local_user,self::$local_pass);
+						$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+					} else if ($url_host['host'] == 'deliverydronesystem.epizy.com') {
+						$conn = new PDO("mysql:host=".self::$live_host.";dbname=".self::$live_name."",self::$live_user,self::$live_pass);
 						$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 					}
 

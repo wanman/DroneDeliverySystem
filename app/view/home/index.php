@@ -30,6 +30,7 @@
                     <th>Excpecting delivery time</th>
                     <th>Distance travel(km)</th>
                     <th>Drone departure</th>
+                    <th>view details</th>
                 </tr>
             </thead>
             <tbody>
@@ -68,6 +69,7 @@
                             <td><?= $client_2_delivery_time; ?></td>
                             <td><?= ($orders->order_distance_client_2 != "null" && $orders->order_distance_client_2 != "") ? "$orders->order_distance_client_2 km" : "-"; ?></td>
                             <td><?= $orders->order_departure_time; ?></td>
+                            <td><a href='\deliverySystem\viewOrder\index\<?= $orders->order_id; ?>'>View details</a></td>
                         </tr>
 
                         <?php

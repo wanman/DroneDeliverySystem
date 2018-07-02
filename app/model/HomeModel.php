@@ -14,7 +14,8 @@ class HomeModel {
                                             orders.order_status_client_2,
                                             orders.order_departure_time,
                                             orders.order_distance_client_1,
-                                            orders.order_distance_client_2
+                                            orders.order_distance_client_2,
+                                            orders.order_id
                                         FROM orders
                                         LEFT JOIN drones ON drones.drone_id = orders.order_ref_drone
                                         LEFT JOIN client c1 ON c1.client_id = orders.order_ref_client1

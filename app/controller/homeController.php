@@ -2,7 +2,7 @@
 
 class HomeController extends Controller {
 
-    public function index ($id = '', $name = '') {
+    public function index () {
         $this->model('HomeModel');
 
         // check which orders is pending and update status if package is delivered

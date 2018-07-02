@@ -2,6 +2,8 @@
 
 $action = $this->getAction();
 
+$url = ASSETS;
+
 ?>
 
 <!DOCTYPE html>
@@ -12,8 +14,11 @@ $action = $this->getAction();
     </head>
 
     <!-- Bootstrap -->
-	<link rel="stylesheet" href="../public/assets/css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= $url; ?>/css/bootstrap/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../public/assets/css/custom.css">
+    <link rel="stylesheet" href="<?= $url; ?>/css/custom.css">
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <body>
