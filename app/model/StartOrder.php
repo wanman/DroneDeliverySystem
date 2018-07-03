@@ -60,7 +60,7 @@ class StartOrder {
 
             $this->message_arr['started'] = "Process have started";
         } else {
-            $this->message_arr['busy'] = "All clients is currenlty busy with processing";
+            $this->message_arr['busy'] = "All clients is currenlty busy with processing, please try again in a few moments";
         }
 
     }

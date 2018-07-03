@@ -1,6 +1,6 @@
 <?php include VIEW_LAYOUT . 'header.php'; ?>
 
-<div class="container">
+<div class="container-fluid mt-2">
     <div class="row">
 
         <?php
@@ -18,7 +18,7 @@
                 ?>
 
                 <div class="alert alert-danger" role="alert">
-                    <?= $messsage_val; ?> <a href="\deliverySystem\StartOrder\index" class="alert-link">Retry</a>
+                    <?= $messsage_val; ?>
                 </div>
 
                 <?php

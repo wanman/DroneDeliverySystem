@@ -1,4 +1,4 @@
-<?php include VIEW . 'header.php'; ?>
+<?php include VIEW_LAYOUT . 'header.php'; ?>
 
 <div class="container-fluid">
 
@@ -23,12 +23,12 @@
                     <th>Drone</th>
                     <th>Client 1</th>
                     <th>Status</th>
-                    <th>Excpecting delivery time</th>
-                    <th>Distance travel(km)</th>
+                    <th>Excpecting arrival time</th>
+                    <th>Distance travel</th>
                     <th>Client 2</th>
                     <th>Status</th>
                     <th>Excpecting delivery time</th>
-                    <th>Distance travel(km)</th>
+                    <th>Distance travel</th>
                     <th>Drone departure</th>
                     <th>view details</th>
                 </tr>
@@ -95,4 +95,4 @@
     </div>
 </div>
 
-<?php include VIEW . 'footer.php'; ?>
+<?php include VIEW_LAYOUT . 'footer.php'; ?>

@@ -13,8 +13,7 @@
         header('Location: /deliverySystem');
     }
 
-    // view($this->view_data['orders_arr']);
-
+    // set location for google maps
     $location_data = "[";
 
     $location_data .= "['Starting point', -33.711242, 19.585154, 3],";
@@ -22,8 +21,6 @@
     $location_data .= "['Client 2: {$this->view_data['orders_arr']->client2}', {$this->view_data['orders_arr']->client2_lat}, {$this->view_data['orders_arr']->client2_lng}, 1]";
     
     $location_data .= "];";
-
-    // view($location_data);
 
 ?>
 

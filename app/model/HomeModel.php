@@ -40,7 +40,7 @@ class HomeModel {
                     
                     $cleint_2_location = db::select_obj("SELECT * FROM client WHERE client_id = '$order->order_ref_client2'");
                     
-                    $distance_to_client_2 = round($this->calcualte_location(floatval($cleint_1_location->client_location_lat), floatval($cleint_2_location->client_location_lng), floatval($cleint_2_location->client_location_lat), floatval($cleint_2_location->client_location_lng), "K"), 0);
+                    $distance_to_client_2 = round($this->calcualte_location(floatval($cleint_1_location->client_location_lat), floatval($cleint_1_location->client_location_lng), floatval($cleint_2_location->client_location_lat), floatval($cleint_2_location->client_location_lng), "K"), 0);
 
                     // set distance from client 1 to client 2
                     db::update("UPDATE orders SET order_distance_client_2 = '$distance_to_client_2' WHERE order_id = $order->order_id");
